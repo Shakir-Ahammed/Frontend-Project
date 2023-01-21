@@ -1,6 +1,99 @@
-body {
-  background-color: red;
+* {
+  margin: 0;
+  padding: 0;
+}
 
-  text-align: center;
-  font-size: large;
+.con {
+  background-image: linear-gradient(
+      to bottom,
+      hsla(49, 100%, 71%, 0.616),
+      hsla(43, 99%, 66%, 0.431),
+      hsla(37, 97%, 59%, 0.156)
+    ),
+    url("nature.jpeg");
+
+  background-repeat: no-repeat;
+
+  background-size: cover;
+
+  background-position: center;
+
+  width: 100%;
+
+  height: 100%;
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  transition: opacity 1s ease-in-out;
+}
+
+.sun {
+  background-color: #ffe77c;
+  height: 70px;
+  width: 70px;
+  border-radius: 50px;
+  border: 1px #ffe87c;
+  position: relative;
+  left: 100px;
+  top: 410px;
+  box-shadow: 50px 50px 50px 50px hsl(51, 80%, 78%);
+  animation-name: example;
+  animation-duration: 20s;
+  /* transition: transform 5s ease-in-out; */
+}
+@keyframes example {
+  100% {
+    transform: translate(1200px, 150px);
+    background-color: rgba(135, 207, 235, 0);
+    box-shadow: none;
+    border: none;
+  }
+  90% {
+    transform: translate(1200px, 100px);
+    background-color: #fa4c077b;
+    box-shadow: none;
+  }
+  80% {
+    transform: translate(1100px, 50px);
+    background-color: #fa4c0788;
+    box-shadow: none;
+  }
+  70% {
+    transform: translate(1000px, 0px);
+    background-color: #fa8407bd;
+    box-shadow: none;
+  }
+  60% {
+    transform: translate(900px, -50px);
+    box-shadow: 20px 20px 20px 20px gainsboro;
+    background-color: #fa8407ce;
+  }
+  50% {
+    transform: translate(800px, -100px);
+    background-color: #fc9b33e9;
+    box-shadow: 30px 30px 30px 30px rgba(220, 220, 220, 0.799);
+  }
+  40% {
+    transform: translate(600px, -150px);
+    background-color: #fcaf33e4;
+    box-shadow: 40px 40px 40px 40px rgba(220, 220, 220, 0.799);
+  }
+  30% {
+    transform: translate(400px, -100px);
+    background-color: #fecd51e5;
+  }
+  20% {
+    transform: translate(200px, -50px);
+    background-color: #ffeaaca7;
+  }
+
+  10% {
+    background-color: #ffe88cea;
+  }
+  0% {
+    background-color: #ffe77c;
+  }
 }
