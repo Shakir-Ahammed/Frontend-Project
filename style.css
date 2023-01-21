@@ -42,11 +42,12 @@
   box-shadow: 50px 50px 50px 50px hsl(51, 80%, 78%);
   animation-name: example;
   animation-duration: 20s;
+  animation-iteration-count: infinite;
   /* transition: transform 5s ease-in-out; */
 }
 @keyframes example {
   100% {
-    transform: translate(1200px, 150px);
+    transform: translate(1220px, 150px);
     background-color: rgba(135, 207, 235, 0);
     box-shadow: none;
     border: none;
